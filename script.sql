@@ -319,11 +319,27 @@ SELECT * FROM compra_produto;
 SELECT * FROM pagamento;
 
 
-SELECT 
-       VU.unitario AS  valor_unitario;
+--10
+SELECT  
+n.nome AS nome,
 
-FROM
+FROM  
+produto p,        
 
-     compra_produto cp
+INNER JOIN 
+        
 
 
+where marca = 'Corsair'
+order BY preco 
+
+        c.cate AS fk_categoria; 
+
+
+
+ --1
+
+ select 
+           nome,
+ from 
+        fornecedor 
